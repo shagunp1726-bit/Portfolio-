@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Shagun Patel – Undergraduate Computer Science student at Parul University specializing in Web Development, Software Infrastructure, and Cybersecurity." />
+  <meta name="keywords"
+    content="Shagun Patel, portfolio, web development, software infrastructure, cybersecurity, computer science" />
+  <meta property="og:title" content="Shagun Patel | Portfolio" />
+  <meta property="og:description"
+    content="Undergraduate CS student passionate about web development, software infrastructure, and cybersecurity." />
+  <title>Shagun Patel | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── Cursor Glow ─── -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ─── Navbar ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>SP<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+      <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+      <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+      <li><a href="#technologies" class="nav-link" id="nav-technologies">Technologies</a></li>
+      <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+      <li><a href="#certifications" class="nav-link" id="nav-certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+      <!-- Moon icon (shown in dark mode) -->
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+      <!-- Sun icon (shown in light mode) -->
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── Hero Section ─── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag animate-in" style="--delay:0.1s">👋 Hello, I'm</p>
+      <h1 class="hero-name animate-in" style="--delay:0.2s">
+        Shagun <span class="gradient-text">Patel</span>
+      </h1>
+      <div class="hero-typewriter animate-in" style="--delay:0.35s">
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-location animate-in" style="--delay:0.5s">
+        <span class="location-icon">📍</span> Ahmedabad, Gujarat, India
+      </p>
+      <div class="hero-cta animate-in" style="--delay:0.65s">
+        <a href="#contact" class="btn btn-primary" id="hero-contact-btn">Get in Touch</a>
+        <a href="#about" class="btn btn-ghost" id="hero-about-btn">Learn More</a>
+      </div>
+      <div class="hero-scroll animate-in" style="--delay:0.8s">
+        <div class="scroll-indicator">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── About Section ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <img
+                src="assets/profile.jpg"
+                alt="Shagun Patel"
+                class="avatar-photo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                onload="this.nextElementSibling.style.display='none';"
+              />
+              <div class="avatar-initials avatar-fallback">SP</div>
+            </div>
+            <div class="avatar-badge">
+              <span>CS</span>
+              <small>BTech</small>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-desc">
+            I'm pursuing a <strong>Bachelor of Technology in Computer Science</strong> at Parul University, Vadodara
+            (Class of 2027). I'm deeply passionate about building modern web experiences, exploring software
+            infrastructure, and understanding the cybersecurity landscape.
+          </p>
+          <p class="about-desc">
+            My journey is complemented by industry certifications in <strong>cybersecurity, cloud
+              infrastructure</strong>, and <strong>web development fundamentals</strong>. I aim to leverage my education
+            and certifications to contribute to innovative technological projects.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2027</span>
+              <span class="stat-label">Graduating</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Core Skills</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills Section ─── -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What I Know</p>
+        <h2 class="section-title">Top <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal" id="skill-web">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Responsive Web Design</h3>
+          <p class="skill-desc">Crafting fluid, mobile-first layouts that look stunning on every device using HTML, CSS,
+            and modern design principles.</p>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Flexbox</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" id="skill-ds">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Data Structures</h3>
+          <p class="skill-desc">Strong algorithmic thinking with expertise in core data structures — arrays, trees,
+            graphs, and dynamic programming.</p>
+          <div class="skill-tags">
+            <span>Algorithms</span><span>Arrays</span><span>Trees</span><span>Graphs</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" id="skill-git">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="18" r="3" />
+              <circle cx="6" cy="6" r="3" />
+              <circle cx="18" cy="6" r="3" />
+              <path d="M18 9v1a2 2 0 01-2 2H8a2 2 0 01-2-2V9M12 15V9" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Git & Version Control</h3>
+          <p class="skill-desc">Managing codebases with Git — branching strategies, merge conflicts, pull requests, and
+            collaborative workflows on GitHub.</p>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Branching</span><span>CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" id="skill-sec">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Cybersecurity</h3>
+          <p class="skill-desc">Certified in cloud infrastructure security, network security, mobile app penetration
+            testing, and cyber defense.</p>
+          <div class="skill-tags">
+            <span>Network Security</span><span>Pen Testing</span><span>Cloud Security</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" id="skill-cloud">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Cloud Infrastructure</h3>
+          <p class="skill-desc">Managing and securing cloud environments with a focus on infrastructure as a service and
+            security analysis.</p>
+          <div class="skill-tags">
+            <span>Cloud</span><span>Infrastructure</span><span>Security</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" id="skill-infra">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="8" rx="2" />
+              <rect x="2" y="14" width="20" height="8" rx="2" />
+              <line x1="6" y1="6" x2="6.01" y2="6" />
+              <line x1="6" y1="18" x2="6.01" y2="18" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Software Infrastructure</h3>
+          <p class="skill-desc">Understanding of systems architecture, server configuration, and building scalable
+            software foundations.</p>
+          <div class="skill-tags">
+            <span>Architecture</span><span>Systems</span><span>Scalability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Technologies Section ─── -->
+  <section class="section" id="technologies">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">My Toolkit</p>
+        <h2 class="section-title">Technologies I <span class="gradient-text">Know</span></h2>
+      </div>
+      <div class="tech-categories">
+
+        <!-- Programming Languages -->
+        <div class="tech-category reveal" id="tech-languages">
+          <div class="tech-category-header">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3 class="tech-category-title">Programming Languages</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill" data-icon="☕">Java</span>
+            <span class="tech-pill" data-icon="📜">JavaScript</span>
+            <span class="tech-pill" data-icon="🌐">HTML5</span>
+            <span class="tech-pill" data-icon="🎨">CSS3</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="tech-category reveal" id="tech-databases">
+          <div class="tech-category-header">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <h3 class="tech-category-title">Databases</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill" data-icon="🐬">MySQL</span>
+            <span class="tech-pill" data-icon="🍃">MongoDB</span>
+          </div>
+        </div>
+
+        <!-- Operating Systems -->
+        <div class="tech-category reveal" id="tech-os">
+          <div class="tech-category-header">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <h3 class="tech-category-title">Operating Systems</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill" data-icon="🪟">Windows</span>
+            <span class="tech-pill" data-icon="🐧">Linux</span>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="tech-category reveal" id="tech-cloud">
+          <div class="tech-category-header">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+              </svg>
+            </div>
+            <h3 class="tech-category-title">Cloud</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill" data-icon="☁️">AWS</span>
+          </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="tech-category reveal" id="tech-cyber">
+          <div class="tech-category-header">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="tech-category-title">Cybersecurity</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill" data-icon="📱">Mobile App Pentesting</span>
+            <span class="tech-pill" data-icon="🦠">Malware Analysis</span>
+          </div>
+        </div>
+
+        <!-- CS Core Subjects -->
+        <div class="tech-category reveal" id="tech-cs-core">
+          <div class="tech-category-header">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+              </svg>
+            </div>
+            <h3 class="tech-category-title">CS Core Subjects</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill" data-icon="🌐">Computer Networks</span>
+            <span class="tech-pill" data-icon="💻">Operating Systems</span>
+            <span class="tech-pill" data-icon="🗄️">DBMS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Education Section ─── -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Academic Journey</p>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal" id="edu-parul">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-badge current">Current</div>
+            <h3 class="timeline-title">Parul University, Vadodara</h3>
+            <p class="timeline-degree">Bachelor of Technology — Computer Science</p>
+            <p class="timeline-period">
+              <span class="period-icon">📅</span> September 2023 – August 2027
+            </p>
+            <p class="timeline-desc">Pursuing a BTech in Computer Science with a focus on web development, software
+              infrastructure, and computer engineering. Building foundational knowledge in modern software technologies.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" id="edu-laxman">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Laxman Gyanpith Higher Secondary School</h3>
+            <p class="timeline-degree">High School Diploma — GSEB</p>
+            <p class="timeline-period">
+              <span class="period-icon">📅</span> 2010 – 2023
+            </p>
+            <p class="timeline-desc">Completed secondary and higher secondary education under the Gujarat Secondary and
+              Higher Secondary Education Board (GSEB), building a strong academic foundation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Certifications Section ─── -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Industry Recognition</p>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card reveal" id="cert-cloud">
+          <div class="cert-logo qh">QH</div>
+          <div class="cert-info">
+            <h3 class="cert-title">Managing Cloud Infrastructure &amp; Security Analyst</h3>
+            <p class="cert-issuer">Quick Heal Certified</p>
+          </div>
+          <div class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <button class="cert-view-btn" onclick="openCertModal('assets/cert-cloud.jpg', 'Managing Cloud Infrastructure &amp; Security Analyst')" title="View Certificate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+        <div class="cert-card reveal" id="cert-network">
+          <div class="cert-logo qh">QH</div>
+          <div class="cert-info">
+            <h3 class="cert-title">Network Security Analyst</h3>
+            <p class="cert-issuer">Quick Heal Certified</p>
+          </div>
+          <div class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <button class="cert-view-btn" onclick="openCertModal('assets/cert-network.jpg', 'Network Security Analyst')" title="View Certificate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+        <div class="cert-card reveal" id="cert-ibm">
+          <div class="cert-logo ibm">IBM</div>
+          <div class="cert-info">
+            <h3 class="cert-title">Web Development Fundamentals</h3>
+            <p class="cert-issuer">IBM Certified</p>
+          </div>
+          <div class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <button class="cert-view-btn" onclick="openCertModal('assets/cert-ibm.jpg', 'Web Development Fundamentals')" title="View Certificate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+        <div class="cert-card reveal" id="cert-mobile">
+          <div class="cert-logo qh">QH</div>
+          <div class="cert-info">
+            <h3 class="cert-title">Mobile Application Penetration Testing Analyst</h3>
+            <p class="cert-issuer">Quick Heal Certified</p>
+          </div>
+          <div class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <button class="cert-view-btn" onclick="openCertModal('assets/cert-mobile.jpg', 'Mobile Application Penetration Testing Analyst')" title="View Certificate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+        <div class="cert-card reveal" id="cert-cyber">
+          <div class="cert-logo qh">QH</div>
+          <div class="cert-info">
+            <h3 class="cert-title">Cyber Security Analyst</h3>
+            <p class="cert-issuer">Quick Heal Certified</p>
+          </div>
+          <div class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <button class="cert-view-btn" onclick="openCertModal('assets/cert-cyber.jpg', 'Cyber Security Analyst')" title="View Certificate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+        <div class="cert-card reveal" id="cert-malware">
+          <div class="cert-logo qh">QH</div>
+          <div class="cert-info">
+            <h3 class="cert-title">Malware Analysis Analyst</h3>
+            <p class="cert-issuer">Quick Heal Certified</p>
+          </div>
+          <div class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <button class="cert-view-btn" onclick="openCertModal('assets/cert-malware.jpg', 'Malware Analysis Analyst')" title="View Certificate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate Lightbox Modal -->
+      <div class="cert-modal" id="certModal" onclick="closeCertModal(event)">
+        <div class="cert-modal-inner">
+          <button class="cert-modal-close" onclick="closeCertModal()" aria-label="Close">✕</button>
+          <h4 class="cert-modal-title" id="certModalTitle"></h4>
+          <div class="cert-modal-img-wrap">
+            <img id="certModalImg" src="" alt="Certificate" />
+            <div class="cert-modal-placeholder" id="certModalPlaceholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/>
+              </svg>
+              <p>Image not uploaded yet</p>
+              <small>Place your certificate image in the <code>assets/</code> folder</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ─── Contact Section ─── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Let's Connect</p>
+        <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm always open to discussing new opportunities, collaborative projects, or just
+            having a conversation about tech. Feel free to reach out!</p>
+          <div class="contact-items">
+            <a href="tel:7383325626" class="contact-item" id="contact-phone">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">7383325626</span>
+              </div>
+            </a>
+            <a href="mailto:shagunp1726@gmail.com" class="contact-item" id="contact-email">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">shagunp1726@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/shagun-patel-321830272" target="_blank" rel="noopener" class="contact-item"
+              id="contact-linkedin">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">shagun-patel-321830272</span>
+              </div>
+            </a>
+            <a href="https://github.com/shagunp1726-bit" target="_blank" rel="noopener" class="contact-item" id="contact-github">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">shagunp1726-bit</span>
+              </div>
+            </a>
+            <a href="https://leetcode.com/u/Shagun1726/" target="_blank" rel="noopener" class="contact-item" id="contact-leetcode">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.7-1.756.7s-1.289-.233-1.756-.7l-2.697-2.607c-.466-.467-.7-1.112-.7-1.756s.234-1.29.7-1.756l4.453-4.453c.466-.466 1.112-.7 1.756-.7s1.29.234 1.756.7l2.697 2.608" />
+                  <path d="M3 12h18" />
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">LeetCode</span>
+                <span class="contact-value">Shagun1726</span>
+              </div>
+            </a>
+            <a href="https://codolio.com/profile/ShagunPatel" target="_blank" rel="noopener" class="contact-item" id="contact-codolio">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">Codolio</span>
+                <span class="contact-value">ShagunPatel</span>
+              </div>
+            </a>
+            <div class="contact-item no-link" id="contact-location">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Ahmedabad, Gujarat, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Let's collaborate!" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-form-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>SP<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-copy">© 2024 Shagun Patel. Crafted with ❤️ and lots of ☕</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/shagun-patel-321830272" target="_blank" rel="noopener" class="social-link"
+            id="footer-linkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="https://github.com/shagunp1726-bit" target="_blank" rel="noopener" class="social-link" id="footer-github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+            </svg>
+          </a>
+          <a href="https://leetcode.com/u/Shagun1726/" target="_blank" rel="noopener" class="social-link" id="footer-leetcode" aria-label="LeetCode">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.7-1.756.7s-1.289-.233-1.756-.7l-2.697-2.607c-.466-.467-.7-1.112-.7-1.756s.234-1.29.7-1.756l4.453-4.453c.466-.466 1.112-.7 1.756-.7s1.29.234 1.756.7l2.697 2.608" />
+              <path d="M3 12h18" />
+            </svg>
+          </a>
+          <a href="https://codolio.com/profile/ShagunPatel" target="_blank" rel="noopener" class="social-link" id="footer-codolio" aria-label="Codolio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </a>
+          <a href="mailto:shagunp1726@gmail.com" class="social-link" id="footer-email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
